@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="onClick"
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/usernameField"
+        android:id="@+id/usernameFieldR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/userHint"
+        android:hint="Username"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,42 +21,57 @@
         app:layout_constraintVertical_bias="0.221" />
 
     <EditText
-        android:id="@+id/passwordField"
+        android:id="@+id/passwordFieldR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/passHint"
+        android:hint="Password"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usernameField"
+        app:layout_constraintTop_toBottomOf="@+id/usernameFieldR"
         app:layout_constraintVertical_bias="0.102" />
 
     <Button
-        android:id="@+id/loginButton"
-        android:layout_width="149dp"
-        android:layout_height="59dp"
-        android:text="@string/login"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordField"
-        app:layout_constraintVertical_bias="0.216" />
-
-    <Button
-        android:id="@+id/registerButton"
+        android:id="@+id/registerButtonR"
         android:layout_width="177dp"
         android:layout_height="58dp"
-        android:text="@string/regis"
+        android:text="Register"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginButton"
-        app:layout_constraintVertical_bias="0.252" />
+        app:layout_constraintTop_toBottomOf="@+id/emailFieldR"
+        app:layout_constraintVertical_bias="0.369" />
+
+    <EditText
+        android:id="@+id/passwordFieldRe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordFieldR"
+        app:layout_constraintVertical_bias="0.131" />
+
+    <EditText
+        android:id="@+id/emailFieldR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="E-Mail Adress"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordFieldRe"
+        app:layout_constraintVertical_bias="0.187" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
