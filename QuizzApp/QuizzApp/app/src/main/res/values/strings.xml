@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">QuizzApp</string>
+    <string name="choose">     Please choose one categorie</string>
+    <string name="login">Login</string>
+    <string name="regis">Register</string>
+    <string name="passHint">Password</string>
+    <string name="userHint">Username</string>
+</resources>

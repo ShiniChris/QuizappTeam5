@@ -76,7 +76,22 @@
             ";
             mail($email, "Quizapp Registrierung", $msg);
 	}
-	
+	function getQuestion($frageid){
+		$stmt = "SELECT * FROM quizapp_questions WHERE QID = $frageid";
+		$sql = $this->executeStmt($stmt);
+		$array = array();
+		$row = oci_fetch_assoc($sql);
+		$array["frage"] = $row;
+		$stmt = "SELECT * FROM quizapp_questionanswers WHERE QID = $frageid";
+		$sql = $this->executeStmt($stmt);
+		$array2 = array();
+		while ($row = oci_fetch_assoc($sql)) {
+			$array2[] = $row;
+		}
+		$array["antworten"] = $array2;
+		return json_encode($array);
+		
+	}
 
 
 
